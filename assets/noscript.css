@@ -1,0 +1,36 @@
+body:before {
+	background-attachment: scroll;
+	content: '';
+	display: block;
+	height: var(--background-height);
+	left: 0;
+	pointer-events: none;
+	position: fixed;
+	top: 0;
+	transform: scale(1);
+	width: 100vw;
+	z-index: 0;
+	background-image: linear-gradient(to top, rgba(22,22,28,0.929), rgba(22,22,28,0.929)), url('videos/bg.mp4.jpg');
+	background-position: 0% 0%, top;
+	background-repeat: repeat, no-repeat;
+	background-size: auto, cover;
+}
+
+body {
+	overflow: auto !important;
+}
+
+body:after {
+	display: none !important;
+}
+
+#main > .inner {
+	opacity: 1.0 !important;
+}
+
+#main > .inner > section {
+	opacity: 1.0 !important;
+	transform: none !important;
+	transition: none !important;
+	filter: none !important;
+}
